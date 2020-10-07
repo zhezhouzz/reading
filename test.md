@@ -3,13 +3,9 @@
 | client | vc    | inferred spec | assertion |  axioms |
 |--------|-------|---------------|-----------|---------|
 | [custom-stack](#custom-stack-prog) | [vc](#custom-stack-vc) |[cons](#custom-stack-libs-cons),[is_empty](#custom-stack-libs-is-empty), [stack_head](#custom-stack-libs-stack-head), [stack_tail](#custom-stack-libs-stack-tail)|          [assertion](#custom-stack-assertion-1) |    [axiom](#custom-stack-axiom-1)         |
-
 | [custom-stack](#custom-stack-prog) | [vc](#custom-stack-vc) |[cons](#custom-stack-libs-cons),[is_empty](#custom-stack-libs-is-empty), [stack_head](#custom-stack-libs-stack-head), [stack_tail](#custom-stack-libs-stack-tail)|          [assertion](#custom-stack-assertion-2) |    [axiom](#custom-stack-axiom-2)         |
-
 | [custom-stack](#custom-stack-prog) | [vc](#custom-stack-vc) |[cons](#custom-stack-libs-cons),[is_empty](#custom-stack-libs-is-empty), [stack_head](#custom-stack-libs-stack-head), [stack_tail](#custom-stack-libs-stack-tail)|          [assertion](#custom-stack-assertion-3) |    [axiom](#custom-stack-axiom-3)         |
-
 | [stream](#stream-prog) | [vc](#stream-vc) |[cons](#stream-libs-cons),[nil](#stream-libs-nil), [force](#stream-libs-force), [lazy](#stream-libs-lazy)| [assertion](#stream-assertion-1) |    [axiom](#stream-axiom-1)         |
-
 | [stream](#stream-prog) | [vc](#stream-vc) |[cons](#stream-libs-cons),[nil](#stream-libs-nil), [force](#stream-libs-force), [lazy](#stream-libs-lazy)| [assertion](#stream-assertion-2) |    [axiom](#stream-axiom-2)         |
 
 ## custom-stack
