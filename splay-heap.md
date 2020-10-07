@@ -3,7 +3,29 @@
 #### prog
 
 ```
-
+let rec partition pivot = function
+  | E -> E, E
+  | T (a, x, b) as tr ->
+    if Elem.leq x pivot then
+      match b with
+      | E -> tr, E
+      | T (b1, y, b2) ->
+        if Elem.leq y pivot then
+          let small, big = partition pivot b2 in
+          T (T (a, x, b1), y, small), big
+        else
+          let small, big = partition pivot b1 in
+          T (a, x, small), T (big, y, b2)
+    else
+      match a with
+      | E -> E, tr
+      | T (a1, y, a2) ->
+        if Elem.leq y pivot then
+          let small, big = partition pivot a2 in
+          T (a1, y, small), T (big, x, b)
+        else
+          let small, big = partition pivot a1 in
+          small, T (big, y, T (a2, x, b))
 ```
 
 #### vc
